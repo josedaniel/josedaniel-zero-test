@@ -597,6 +597,7 @@
     }
     render() {
       return x`<p>
+      Hola José Daniel! <br>
       This is a ${this.name} written in plain JS! <br>
       You can edit this in client/components/vulkano-webcomponent/main.js.
     </p>`;

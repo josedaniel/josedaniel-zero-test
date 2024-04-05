@@ -6,5 +6,73 @@ body{
   .zero-container{
     padding: 20px;
   }
+
+  section{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @include breakpoint(768) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint(1024) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tarjeta{
+      background-color: antiquewhite;
+      border-radius: 10px;
+      box-shadow: 1px 1px 20px #28212f33;
+      border: 1px solid #f0d8ba;
+
+      .heroe{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        img{
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      .description{
+        padding: 10px;
+
+        h2{
+          font-size: 18px;
+          color: #28212f;
+          font-weight: 600;
+          border-bottom: 1px solid #28212f85;
+        }
+
+        p{
+          margin-bottom: 0;
+        }
+      }
+
+      .actions{
+        width: calc(100% - 20px);
+        border-top: 1px solid #28212f85;
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        a.button{
+          background-color: #28212f;
+          color: white;
+          display: inline-block;
+          padding: 5px 10px;
+          font-weight: 600;
+          border-radius: 3px;
+          text-transform: uppercase;
+          line-height: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 

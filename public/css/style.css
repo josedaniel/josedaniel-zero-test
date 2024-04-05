@@ -926,4 +926,65 @@ body {
 body .zero-container {
   padding: 20px;
 }
+body section {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media screen and (min-width: 48em) {
+  body section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 64em) {
+  body section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+body section .tarjeta {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px rgba(40, 33, 47, 0.2);
+  border: 1px solid #f0d8ba;
+}
+body section .tarjeta .heroe {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body section .tarjeta .heroe img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body section .tarjeta .description {
+  padding: 10px;
+}
+body section .tarjeta .description h2 {
+  font-size: 18px;
+  color: #28212f;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(40, 33, 47, 0.5215686275);
+}
+body section .tarjeta .description p {
+  margin-bottom: 0;
+}
+body section .tarjeta .actions {
+  width: calc(100% - 20px);
+  border-top: 1px solid rgba(40, 33, 47, 0.5215686275);
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body section .tarjeta .actions a.button {
+  background-color: #28212f;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */
